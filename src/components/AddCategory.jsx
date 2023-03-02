@@ -4,10 +4,6 @@ import { useState } from "react";
 
 
 export const AddCategory = ({ onNewCategory }) => {
-  const refreshPage = () => {
-    window.location.reload();
-  }
-
   const [inputValue, setinputValue] = useState("");
 
   const onInputChange = ({ target }) => {

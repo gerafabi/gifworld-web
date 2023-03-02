@@ -132,32 +132,36 @@
     width: 100%;
   }
   .pieDePagina{
+    
     min-width: 50px;
     min-height: 50px;
   }
   .pieDePagina p{
+    inline-size: 700px;
     min-width: 50px;
     min-height: 50px;
+    max-inline-size: 400px;
+    min-inline-size: 50px;
     margin: auto;
-    text-align: center;
     background-image: url("./imgs/fondox.gif");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 2rem;
     box-shadow: 5px 5px 10px;
     font-family:'Times New Roman', Times, serif;
     color: rgb(21, 22, 22);
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     text-align: center;
+
     background-color: rgb(176, 176, 184);
     
     
   }
   .redes {
+
     text-align: right;
     min-width: 100px;
     min-height: 100px;
-    margin: auto;
+    margin-right: 60px;
   }
   .redes a{
   margin: 5px;
