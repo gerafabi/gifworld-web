@@ -19,7 +19,7 @@ const onAddCategory = (newCategory) => {
       <div className="headerAguilas">
       <p>{now}</p> 
       <Menu/>
-      <h1>❀ Gif World ❀</h1>      
+      <h1>Gif World</h1>    
       </div> 
         {/* Buscador de gifs */}
         <AddCategory 
@@ -29,7 +29,7 @@ const onAddCategory = (newCategory) => {
   
         <div className="refrescar">
         <form>
-          <button className="limpiar" onClick={()=>setCategories([])}>↺</button>
+          <button className="limpiar" onClick={()=>setCategories([])}>🗑️</button>
         </form>
       </div>
             {/*Listado de Gif */}   
@@ -44,7 +44,7 @@ const onAddCategory = (newCategory) => {
           
     {/* pie */}
     <div className='pieDePagina'>
-      <p>App creada por Gerardo Marcovics 2023</p>
+      <p>Creada por Gerardo Marcovics ® 2023 </p>
     </div>
     </>
   )
