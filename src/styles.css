@@ -28,12 +28,18 @@
   }
   
   body {
+    background-color: rgb(154, 124, 156);
     padding: 60px;
     align-items: center;
   }
+  .buscador{
+    margin: auto;
+    text-align: center;
+  }
   
   input {
-    margin-left: 31%;
+    margin: auto;
+    text-align: center;
     background-color: white;
     border-radius: 5px;
     border: 1px solid rgb(97, 32, 158);
@@ -104,6 +110,8 @@
     width: 100%;
   }
   .pieDePagina p{
+    margin: auto;
+    text-align: center;
     background-image: url("./imgs/fondox.gif");
     background-repeat: no-repeat;
     background-size: cover;
@@ -118,11 +126,9 @@
     
   }
   .redes {
-    justify-content:left;
-    display: block;
+    margin: auto;
   }
   .redes a{
-  justify-content: left;
   margin: 5px;
   text-decoration: none;
   font-size: 40px;
@@ -141,9 +147,8 @@
   color: white;
   }
   .refrescar{
-    margin-top: 1%;
-    margin-left: 48%;
-    margin-bottom: 5%;
+    margin: auto;
+    text-align: center;
   }
 
   .limpiar{
