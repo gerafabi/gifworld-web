@@ -28,10 +28,8 @@ const onAddCategory = (newCategory) => {
         />
   
         <div className="refrescar">
-        <form>
           <button className="limpiar" onClick={()=>setCategories([ ])}>🗑️</button>
-        </form>
-      </div>
+        </div>
             {/*Listado de Gif */}   
             {
               categories.map(category => (
