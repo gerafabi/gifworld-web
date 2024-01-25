@@ -1,8 +1,6 @@
 //rafc shotcut componente funcional
 import { useState } from "react";
 
-
-
 export const AddCategory = ({ onNewCategory }) => {
   const [inputValue, setinputValue] = useState("");
 

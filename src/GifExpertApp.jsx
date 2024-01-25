@@ -1,17 +1,12 @@
-
 import React, { useState } from 'react'
 import { AddCategory, GifGrid, Menu } from './components';
-
 import moment from 'moment';
-import { useFetchGifs } from './hooks/useFetchGifs';
 
-{/* Hora */}
+
 const now = moment().format("HH:mm A");
-{/*---------------*/}
 
 export const GifExpertApp = () => {
-const {isFull} = useFetchGifs();
-const [ categories, setCategories ] = useState([""])
+const [ categories, setCategories ] = useState([]);
 
 const thanos = () =>{
   setCategories([]); 
@@ -21,29 +16,23 @@ const onAddCategory = (newCategory) => {
   if(categories.includes(newCategory)) return;
   setCategories([newCategory,...categories]);
 }
-
   return (
     <>
-      {/* Header */}
       <div className="headerAguilas">
-      <p>Conectad@ desde las {now} </p>
       <Menu/>
       <h1>Gif World</h1>  
       </div> 
-        {/* Buscador de gifs */}
         <AddCategory 
         onNewCategory={ onAddCategory }
         currentCategories={ categories }
         />
-
-          <div className="refrescar">
-              <button className="limpiar" 
-              onClick={thanos}>🗑️
-              </button>
-          </div>
-
-        
-            {/*Listado de Gif */}
+          {
+            categories.length > 0 && ( <div className="refrescar">
+            <button className="limpiar" 
+            onClick={thanos}>🗑️
+            </button>
+        </div>)
+          }
             {
               
               categories.map(category => (
@@ -54,9 +43,12 @@ const onAddCategory = (newCategory) => {
                 ))
             }
                 
-          {/* pie */}
           <div className='pieDePagina'>
-            <p>Creada por Gerardo Marcovics ® 2023 </p>
+            <p>Version 1.1.0</p>
+          </div>
+          <div className='footerText'>
+            <p>Created by Gerardo Marcovics</p>
+            <p>React - Vite</p>
           </div>
     </>
   )
