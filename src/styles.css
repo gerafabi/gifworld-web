@@ -258,13 +258,14 @@ h3 {
   align-items: center;
 }
 .aboutMe {
-  width: 100vw;
-  padding: 10px;
+  width: 80vw;
+  padding: 20px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center; 
-  justify-content: center; 
+  justify-content: center;
+  inline-size: 90%;
 }
 .aboutmeTitle{
   text-align: center;
@@ -273,7 +274,7 @@ h3 {
   font-family:'Lucida Grande', 'Lucida Sans Unicode';
 }
 .aboutMe p {
-  width: 75%;  
+  width: 90%;  
   text-align: center;
   color: #dfe0e6;
   font-size: 1.2em;

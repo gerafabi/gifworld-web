@@ -5,7 +5,7 @@ const Loading = () => {
   return (
     <div className='loadingScreen'>
       <CircularProgress disableShrink />
-      <Typography className='text1'>Cargando...</Typography>
+      <p className='text1'>GIF World App</p>
     </div>
   );
 };
