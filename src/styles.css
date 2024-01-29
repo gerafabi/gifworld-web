@@ -1,6 +1,6 @@
 * {
   font-family: Helvetica, Arial, sans-serif;
-  background-color: rgb(85, 76, 85);
+  /* background-color: rgb(85, 76, 85); */
   color: rgb(0, 0, 0);
 }
 
@@ -10,6 +10,11 @@ meta {
   content: width=device-width, initial-scale=1;
 }
 
+@media (max-width: 768px) {
+  .aboutMe {
+    padding: 20px;
+  }
+}
 
 h1 {
   display: flex;
@@ -46,8 +51,7 @@ h1 {
 }
 
 body {
-  margin: 8px;
-  padding: 8px;
+  
   background-color: rgb(85, 76, 85);
   align-items: center;
 }
@@ -139,7 +143,10 @@ h3 {
   width: 10em;
   border-radius: 20px;
 }
-
+.text1 {
+  font-size: 2.5em;
+  font-family:'Lucida Grande', 'Lucida Sans Unicode';
+}
 .pieDePagina p {
   border-radius: 20px;
   margin: auto;
@@ -157,14 +164,15 @@ h3 {
 }
 
 .redes {
+  display: flex;
+  flex-direction: row;
   margin: 20px;
   text-align: right;
 }
 
 .redes a {
+  margin: 3px;
   text-decoration: none;
-  background-image: url("./imgs/flores.gif");
-  background-size: cover;
   background-color: #143548;
   font-size: 30px;
   width: 60px;
@@ -240,4 +248,57 @@ h3 {
   color: rgb(255, 255, 255);
   font-size: 1.2rem;
   text-align: center;
+}
+.loadingScreen {
+  margin-top: 100px;
+  width: 100vw;
+  text-align: center;
+  align-items: center;
+}
+.aboutMe {
+  width: 100vw;
+  padding: 3px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+}
+.aboutmeTitle{
+  text-align: center;
+  color: #000000;
+  font-size: 2.5em;
+  font-family:'Lucida Grande', 'Lucida Sans Unicode';
+}
+.aboutMe p {
+  width: 75%;  
+  text-align: center;
+  color: #dfe0e6;
+  font-size: 1.2em;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold; 
+}
+.aboutHeaderImg {
+  width: 200px;
+  height: 200px;
+  max-width: 800px;
+  max-height: 800px;
+  min-width: 5%;
+  min-height: 5%;
+  border-radius: 30px;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 5%;
+  text-align: center;
+  background-image: url("./imgs/gera.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  inline-size: 90%;
+}
+.aboutHeaderImg p {
+  margin: auto;
+  text-align: center;
+  color: #ffffff;
+  font-size: 2em;
+  font-family:'Lucida Grande', 'Lucida Sans Unicode';
 }
