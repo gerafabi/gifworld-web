@@ -30,3 +30,4 @@ export const GifItem = ({ title, url }) => {
     </div>
   );
 };
+export default GifItem

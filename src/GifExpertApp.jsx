@@ -40,6 +40,7 @@ export const GifExpertApp = () => {
               ) : (
                 <>
                   <div className="headerAguilas">
+                  <Menu/>
                     <h1>GIF World</h1>
                   </div>
                   <AddCategory

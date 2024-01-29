@@ -12,3 +12,4 @@ export const Menu = () => {
     </header> 
   )
 }
+export default Menu

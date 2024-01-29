@@ -257,7 +257,7 @@ h3 {
 }
 .aboutMe {
   width: 100vw;
-  padding: 3px;
+  padding: 10px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
