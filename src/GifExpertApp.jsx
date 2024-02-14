@@ -34,7 +34,7 @@ export const GifExpertApp = () => {
                 <>
                   <div className="headerAguilas">
                   <Menu/>
-                    <h1>GIF World</h1>
+                    <h1>GIF World App</h1>
                   </div>
                   <AddCategory
                     onNewCategory={onAddCategory}
@@ -58,8 +58,8 @@ export const GifExpertApp = () => {
                     <p>Version 1.1.0</p>
                   </div>
                   <div className='footerText'>
-                    <p>Created by Gerardo Marcovics</p>
-                    <p>React - Vite</p>
+                    <p>Copyright 2024 GIF World App GM</p>
+                    <p>Technologies: React - Vite - Boostrap</p>
                   </div>
                 </>
               )}

@@ -15,7 +15,7 @@ export const GifItem = ({ title, url }) => {
         window.URL.revokeObjectURL(downloadUrl);
       })
       .catch(error => {
-        console.error('Error al descargar la imagen:', error);
+        console.error('Error with the download:', error);
       });
   };
 
@@ -24,7 +24,7 @@ export const GifItem = ({ title, url }) => {
       <img src={url} alt={title} />
       <div className='card-icons'>
         <button className='download-button' onClick={handleDownload}>
-          <FontAwesomeIcon icon={faDownload} className='icon download-icon' title='Descargar' />
+          <FontAwesomeIcon icon={faDownload} className='icon download-icon' title='Download GIF' />
         </button>
       </div>
     </div>
