@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { AddCategory, GifGrid, Menu } from './components';
 import Loading from './components/Loading';
-import { AboutMe } from './components/AboutMe';
+
 
 export const GifExpertApp = () => {
   const [categories, setCategories] = useState([]);
@@ -28,12 +27,6 @@ export const GifExpertApp = () => {
   }, []);
 
   return (
-    <Router>
-      <Routes>
-        <Route path="/about-me" element={<AboutMe />} />
-        <Route
-          path="/"
-          element={
             <>
               {loadingInitial ? (
                 <Loading />
@@ -71,9 +64,5 @@ export const GifExpertApp = () => {
                 </>
               )}
             </>
-          }
-        />
-      </Routes>
-    </Router>
   );
 };
