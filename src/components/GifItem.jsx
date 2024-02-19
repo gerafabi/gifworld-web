@@ -1,8 +1,10 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
+import { Typography } from '@mui/material';
 
-export const GifItem = ({ title, url }) => {
+export const GifItem = ({ title, url, height, width }) => {
+  const resolution = `${width}x${height} HD`;
   const handleDownload = () => {
     fetch(url)
       .then(response => response.blob())
@@ -27,6 +29,7 @@ export const GifItem = ({ title, url }) => {
           <FontAwesomeIcon icon={faDownload} className='icon download-icon' title='Download GIF' />
         </button>
       </div>
+      <Typography className='resolution'>{resolution}</Typography>
     </div>
   );
 };
