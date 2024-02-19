@@ -3,7 +3,7 @@ import { AddCategory, GifGrid, Menu } from './components';
 import Loading from './components/Loading';
 
 
-export const GifExpertApp = () => {
+export const GifWorldApp = () => {
   const [categories, setCategories] = useState([]);
   const [loadingInitial, setLoadingInitial] = useState(true);
   const [loadingImages, setLoadingImages] = useState(false);
